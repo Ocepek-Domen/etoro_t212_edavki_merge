@@ -19,6 +19,7 @@ Pred oddajo v eDavki ročno preveri merge.xml za vsaj nekaj transakcij.
 - [ ] ⚠️ Če so v t212.xml transakcije za delnice, katerih ni v etoro.xml, jih trenutno ne dodaja v merged.xml (Spisek teh je v errors.log) ⚠️
 
 ### 📁 Struktura projekta
+```
 │   etoro.xml
 │   main.py
 │   README.md
@@ -27,6 +28,7 @@ Pred oddajo v eDavki ročno preveri merge.xml za vsaj nekaj transakcij.
      │──errors.log
      │──info.log
      └──merged.xml
+```
 
 etoro.xml in t212.xml sta primeri datotek, ki vsebujeta transakcijske podatke iz dveh različnih borznih platform.
 
@@ -37,9 +39,10 @@ Prepričajte se, da imate nameščen Python 3.13.2.
 Za zagon aplikacije ne potrebujete namestiti nobenih odvisnosti, saj so vse odvisnosti nameščene s Pythonom.
 
 #### 3️⃣ Zagon aplikacije
-Ko so vse odvisnosti nameščene, zaženite skript z ukazom:
-primer:
+Primer ukaza:
+```
 python3.13.exe c:/Users/Janez/Desktop/etoro_t212_edavki/main.py c:/Users/Janez/Desktop/etoro_t212_edavki/etoro.xml c:/Users/Janez/Desktop/etoro_t212_edavki/t212.xml
+```
 
 ### 📝 Pojasnilo datotek:
 - **etoro.xml** in **t212.xml** vsebujeta podatke o nakupih in prodajah na borznih platformah.
